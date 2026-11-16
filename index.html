@@ -13,10 +13,10 @@
   html,body{height:100%;margin:0;background:#fff;color:#000}
   main{
     min-height:100%;
-    display:flex;align-items:center;justify-content:center;
+    display:grid;grid-template-rows:1fr 2fr;justify-items:center;
     padding:max(24px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left));
   }
-  .logo{display:block;width:clamp(140px,20vw,100%);color:#000;text-decoration:none;opacity:1;transition:opacity .3s ease,transform .3s ease}
+  .logo{display:block;align-self:end;translate:0 50%;width:clamp(140px,20vw,100%);color:#000;text-decoration:none;opacity:1;transition:opacity .3s ease,transform .3s ease}
   .logo:hover,.logo:focus-visible{opacity:.55;transform:scale(1.03)}
   .logo:focus-visible{outline:1px solid currentColor;outline-offset:8px}
   .logo svg{display:block;width:100%;height:auto;fill:currentColor}
